@@ -96,7 +96,6 @@ nav {
     grid-row: 2;
     text-align: right;
     position: relative;
-
     width: calc(100%)
 
 }
@@ -184,4 +183,53 @@ nav {
     }
 }
 
-/*
+/* about me section -----------------------------------*/
+
+.about_me {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about_subtitle {
+    text-align: left;
+    position: relative;
+    width: calc(100%)
+
+}
+
+.about_me_img {
+    box-shadow: var(--bs);
+}
+
+
+@media (min-width: 600px) {
+    .about_me {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-areas: 
+        "title img"
+        "subtitle img"
+        "text img";
+        grid-column-gap: 2em;
+    }
+
+    .about_title {
+        grid-area: title;
+    }
+    .about_subtitle {
+        grid-area: subtitle;
+        grid-column: 1 / -1;
+        grid-row: 2;
+        position: relative;
+        left: -2em;
+        width: calc(100% + 4em);
+        padding-left: 2em;
+        padding-right: calc(200px + 4em);
+    }
+
+    .about_me_img {
+        grid-area: img;
+        position: relative;
+        z-index: 2;
+    }
+}
