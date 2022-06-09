@@ -124,7 +124,7 @@ nav {
 
 .my_services {
     background-color: #1b1b1b;
-    background-image: url(/assets/imgs/code.jpg);
+    background-image: url(./assets/imgs/code.jpg);
     background-size: cover;
     background-position: center;
     color: #ffffff;
@@ -202,7 +202,7 @@ nav {
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 1700px) {
     .about_me {
         display: grid;
         grid-template-columns: 1fr 200px;
